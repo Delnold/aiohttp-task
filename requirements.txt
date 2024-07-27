@@ -1,0 +1,14 @@
+PyJWT
+python-dotenv
+asyncio
+pydantic
+pydantic_settings
+aiohttp
+passlib
+peewee_migrate
+peewee_async
+aiopg
+bcrypt
+pytest
+requests
+pydantic[email]
