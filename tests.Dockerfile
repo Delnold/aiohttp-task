@@ -5,4 +5,4 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY . .
 ENV PYTHONPATH=/aiohttp-task_tests
 ENV PYTHONUNBUFFERED=1
-CMD ["pytest", "tests/"]
+CMD ["sh", "-c", "python /aiohttp-task_tests/migrations/migrate.py && python -m unittest discover -s /aiohttp-task_tests/tests"]
